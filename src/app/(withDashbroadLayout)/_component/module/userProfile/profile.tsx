@@ -55,7 +55,7 @@ export default function Profile({ user }: TUserProps) {
               isIconOnly
               className="hover:bg-default-50 p-2 rounded-full bg-default-100 hover:text-pink-500 transition-colors-opacity"
               startContent={<GoPencil />}
-             />
+            ></Button>
           </div>
         )}
 

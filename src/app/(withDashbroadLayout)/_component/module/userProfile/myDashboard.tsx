@@ -15,7 +15,6 @@ const generateChartData = () => {
     const date = subDays(currentDate, i); // Subtract days from the current date
     const formattedDate = format(date, 'MMM d'); // Format as 'Jan 1', 'Jan 2', etc.
     const value = Math.floor(Math.random() * 10000) + 35000; // Random value for demonstration
-
     data.push({ date: formattedDate, value });
   }
 

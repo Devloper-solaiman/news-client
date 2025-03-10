@@ -7,7 +7,7 @@ import { Divider } from '@nextui-org/divider';
 export default function ProfileSkeleton() {
   return (
     <motion.div
-      className="w-full md:w-[550px] xl:w-[640px] mx-auto"
+      className="w-full w-full md:w-[550px] xl:w-[640px] mx-auto mx-auto"
       initial={{ opacity: 0, y: 20 }} // Animating container on load
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}

@@ -11,7 +11,6 @@ import { useTheme } from 'next-themes';
 import { Theme as EmojiPickerTheme } from 'emoji-picker-react';
 
 const EmojiPicker = dynamic(() => import('emoji-picker-react'), { ssr: false });
-
 interface MessageBarProps {
   onSendMessage: (
     message: string,

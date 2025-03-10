@@ -26,7 +26,6 @@ export function CreateStoryModal() {
 
   const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
-
     if (file) {
       setSelectedFile(file);
       setPreviewUrl(URL.createObjectURL(file));
@@ -48,7 +47,6 @@ export function CreateStoryModal() {
         setUploadProgress(0);
         setUploading(true);
         const cloudinaryUrl = await uploadToCloudinary(selectedFile);
-
         setUploadProgress(100);
 
         await createStoryFn({ media: cloudinaryUrl });
@@ -144,7 +142,7 @@ export function CreateStoryModal() {
                       <div
                         className="bg-blue-600 h-2.5 rounded-full"
                         style={{ width: `${uploadProgress}%` }}
-                       />
+                      ></div>
                     </div>
                     <p className="text-sm text-default-600 mt-2">
                       Uploading: {uploadProgress}%

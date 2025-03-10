@@ -3,7 +3,6 @@ import React from 'react';
 
 export default function FollowerSkeleton() {
   const skeletonArray = Array.from({ length: 10 });
-
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 items-center w-full w-full md:w-[550px] xl:w-[640px] mx-auto mx-auto">
       {skeletonArray.map((_, index) => (

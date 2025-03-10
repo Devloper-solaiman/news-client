@@ -75,12 +75,10 @@ export const IsConnectedProvider: React.FC<{ children: React.ReactNode }> = ({
 
 export const useIsConnected = () => {
   const context = useContext(IsConnectedContext);
-
   if (!context) {
     throw new Error(
       "useIsConnected must be used within an IsConnectedProvider"
     );
   }
-
   return context;
 };

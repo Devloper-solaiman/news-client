@@ -34,7 +34,6 @@ const ScrollableChat = forwardRef<HTMLDivElement, ScrollableChatProps>(
     // Automatically scroll to the bottom when messages change
     useEffect(() => {
       const scrollElement = scrollRef?.current;
-
       if (scrollElement) {
         scrollElement.scrollTop = scrollElement.scrollHeight; // Scroll to bottom
       }
@@ -61,7 +60,6 @@ const ScrollableChat = forwardRef<HTMLDivElement, ScrollableChatProps>(
       } else if (isThisYear) {
         return format(date, 'MMMM dd, yyyy');
       }
-
       return format(date, 'MMMM dd, yyyy');
     };
 
