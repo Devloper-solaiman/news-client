@@ -1,4 +1,4 @@
-import { baseApi } from '../../api/baseApi';
+import { baseApi } from "../../api/baseApi";
 
 export const PremiumPostApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
@@ -14,11 +14,11 @@ export const PremiumPostApi = baseApi.injectEndpoints({
 
         return {
           url: `/posts/premium`,
-          method: 'GET',
+          method: "GET",
           params,
         };
       },
-      providesTags: ['posts'],
+      providesTags: ["posts"],
     }),
   }),
 });

@@ -1,7 +1,9 @@
 // notificationSlice.ts
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { TMessage } from '@/src/types';
-import { RootState } from '../../store';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
+import { RootState } from "../../store";
+
+import { TMessage } from "@/src/types";
 
 interface NotificationState {
   notifications: TMessage[];
@@ -12,7 +14,7 @@ const initialState: NotificationState = {
 };
 
 const notificationSlice = createSlice({
-  name: 'notifications',
+  name: "notifications",
   initialState,
   reducers: {
     addNotification(state, action: PayloadAction<TMessage>) {
@@ -20,7 +22,7 @@ const notificationSlice = createSlice({
     },
     clearNotifications(state, action: PayloadAction<string>) {
       state.notifications = state.notifications.filter(
-        (notification) => notification.chat._id !== action.payload
+        (notification) => notification.chat._id !== action.payload,
       );
     },
   },

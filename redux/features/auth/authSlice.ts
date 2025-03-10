@@ -29,7 +29,7 @@ const authSlice = createSlice({
       action: PayloadAction<{
         user: { id: string; email: string; role: string };
         token: string;
-      }>
+      }>,
     ) => {
       state.user = action.payload.user;
       state.token = action.payload.token;

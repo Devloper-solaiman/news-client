@@ -1,10 +1,10 @@
-import { TChat, TMessage, TUser } from '../types';
+import { TChat, TMessage, TUser } from "../types";
 
 export const isSameSenderMargin = (
   messages: TMessage[],
   m: { sender: TUser },
   i: number,
-  userId: string
+  userId: string,
 ) => {
   if (
     i < messages.length - 1 &&
@@ -19,14 +19,14 @@ export const isSameSenderMargin = (
     (i === messages.length - 1 && messages[i].sender._id !== userId)
   )
     return 0;
-  else return 'auto';
+  else return "auto";
 };
 
 export const isSameSender = (
   messages: TMessage[],
   m: { sender: TUser },
   i: number,
-  userId: string
+  userId: string,
 ) => {
   return (
     i < messages.length - 1 &&
@@ -39,7 +39,7 @@ export const isSameSender = (
 export const isLastMessage = (
   messages: TMessage[],
   i: number,
-  userId: string
+  userId: string,
 ) => {
   return (
     i === messages.length - 1 &&
@@ -51,7 +51,7 @@ export const isLastMessage = (
 export const isSameUser = (
   messages: TMessage[],
   m: { sender: TUser },
-  i: number
+  i: number,
 ) => {
   return i > 0 && messages[i - 1].sender._id === m.sender._id;
 };
@@ -59,7 +59,7 @@ export const isSameUser = (
 // get sender data
 export const getSender = (
   selectedChat: TChat | undefined,
-  user: TUser | undefined
+  user: TUser | undefined,
 ): TUser | undefined => {
   if (!selectedChat || !user) return undefined;
 

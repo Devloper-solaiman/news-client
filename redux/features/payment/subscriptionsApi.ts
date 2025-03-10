@@ -1,5 +1,6 @@
-import { TPaymentData } from "@/types/payment.type";
 import { baseApi } from "../../api/baseApi";
+
+import { TPaymentData } from "@/types/payment.type";
 
 const SubscriptionsApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({

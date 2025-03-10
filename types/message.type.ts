@@ -1,5 +1,5 @@
-import { TChat } from './chat.type';
-import { TUser } from './user.type';
+import { TChat } from "./chat.type";
+import { TUser } from "./user.type";
 
 export interface TMessage {
   _id: string;

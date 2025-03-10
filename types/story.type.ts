@@ -1,4 +1,4 @@
-import { TUser } from './user.type';
+import { TUser } from "./user.type";
 
 export interface TStory {
   _id: string;
@@ -11,7 +11,7 @@ export interface TStory {
   __v: number;
 }
 
-export type ReactionType = 'like' | 'love' | 'laugh' | 'sad' | 'angry';
+export type ReactionType = "like" | "love" | "laugh" | "sad" | "angry";
 
 export interface TAllUserStory {
   user: TUser;

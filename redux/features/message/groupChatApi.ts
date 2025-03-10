@@ -1,4 +1,4 @@
-import { baseApi } from '../../api/baseApi';
+import { baseApi } from "../../api/baseApi";
 
 const ChatsApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
@@ -6,7 +6,7 @@ const ChatsApi = baseApi.injectEndpoints({
     createGroupChat: builder.mutation({
       query: (data) => ({
         url: `/chats/group`,
-        method: 'POST',
+        method: "POST",
         body: data,
       }),
     }),

@@ -1,5 +1,7 @@
-import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+
+import { NextResponse } from "next/server";
+
 import { currentUser } from "./service/currentUser";
 
 type TDecodeUser = {
@@ -55,7 +57,7 @@ export async function middleware(request: NextRequest) {
   if (!user && !accessToken) {
     if (!AuthPathname.includes(pathname)) {
       return NextResponse.redirect(
-        new URL(`/login?redirect=${pathname}`, request.url)
+        new URL(`/login?redirect=${pathname}`, request.url),
       );
     }
 

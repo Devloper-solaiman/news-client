@@ -1,6 +1,8 @@
 import jsPDF from "jspdf";
-import { getImageBase64 } from "./generateBase64";
+
 import { TPost } from "../types/post.type";
+
+import { getImageBase64 } from "./generateBase64";
 
 const getInitials = (name: string): string => {
   const initials = name
@@ -97,7 +99,7 @@ export const generatePDF = async (post: TPost) => {
               10,
               yOffset,
               scaledWidth,
-              scaledHeight
+              scaledHeight,
             );
             doc.rect(10, yOffset, scaledWidth, scaledHeight);
 

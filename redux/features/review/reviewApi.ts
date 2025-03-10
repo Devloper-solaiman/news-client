@@ -1,4 +1,4 @@
-import { baseApi } from '../../api/baseApi';
+import { baseApi } from "../../api/baseApi";
 
 export const ReviewApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
@@ -14,24 +14,24 @@ export const ReviewApi = baseApi.injectEndpoints({
         }
 
         return {
-          url: '/reviews',
-          method: 'GET',
+          url: "/reviews",
+          method: "GET",
           params,
         };
       },
-      providesTags: ['reviews'],
+      providesTags: ["reviews"],
     }),
 
     // Create a review
     createReview: builder.mutation({
       query: (data) => {
         return {
-          url: '/reviews',
-          method: 'POST',
+          url: "/reviews",
+          method: "POST",
           body: data,
         };
       },
-      invalidatesTags: ['reviews'],
+      invalidatesTags: ["reviews"],
     }),
 
     // Update a review
@@ -39,11 +39,11 @@ export const ReviewApi = baseApi.injectEndpoints({
       query: ({ reviewId, data }) => {
         return {
           url: `/reviews/${reviewId}`,
-          method: 'PATCH',
+          method: "PATCH",
           body: data,
         };
       },
-      invalidatesTags: ['reviews'],
+      invalidatesTags: ["reviews"],
     }),
 
     // Delete a review
@@ -51,10 +51,10 @@ export const ReviewApi = baseApi.injectEndpoints({
       query: (reviewId) => {
         return {
           url: `/reviews/${reviewId}`,
-          method: 'DELETE',
+          method: "DELETE",
         };
       },
-      invalidatesTags: ['reviews'],
+      invalidatesTags: ["reviews"],
     }),
 
     // Get a single review by ID
@@ -62,10 +62,10 @@ export const ReviewApi = baseApi.injectEndpoints({
       query: (reviewId) => {
         return {
           url: `/reviews/${reviewId}`,
-          method: 'GET',
+          method: "GET",
         };
       },
-      providesTags: ['reviews'],
+      providesTags: ["reviews"],
     }),
   }),
 });

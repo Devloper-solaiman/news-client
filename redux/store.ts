@@ -1,5 +1,5 @@
-import { configureStore } from '@reduxjs/toolkit';
-import storage from 'redux-persist/lib/storage';
+import { configureStore } from "@reduxjs/toolkit";
+import storage from "redux-persist/lib/storage";
 import {
   persistStore,
   persistReducer,
@@ -9,11 +9,11 @@ import {
   PERSIST,
   PURGE,
   REGISTER,
-} from 'redux-persist';
+} from "redux-persist";
 
-import { baseApi } from './api/baseApi';
-import authReducer from './features/auth/authSlice';
-import notificationReducer from './features/message/notificationSlice';
+import { baseApi } from "./api/baseApi";
+import authReducer from "./features/auth/authSlice";
+import notificationReducer from "./features/message/notificationSlice";
 
 // Fallback storage if localStorage is not available
 const createNoopStorage = () => ({
@@ -30,20 +30,20 @@ const createNoopStorage = () => ({
 
 // Use localStorage in the browser
 const persistAuthConfig = {
-  key: 'auth',
-  storage: typeof window !== 'undefined' ? storage : createNoopStorage(),
+  key: "auth",
+  storage: typeof window !== "undefined" ? storage : createNoopStorage(),
 };
 
 const persistNotificationConfig = {
-  key: 'notifications',
-  storage: typeof window !== 'undefined' ? storage : createNoopStorage(),
+  key: "notifications",
+  storage: typeof window !== "undefined" ? storage : createNoopStorage(),
 };
 
 // Create persisted reducers
 const persistedAuthReducer = persistReducer(persistAuthConfig, authReducer);
 const persistedNotificationReducer = persistReducer(
   persistNotificationConfig,
-  notificationReducer
+  notificationReducer,
 );
 
 export const store = configureStore({
