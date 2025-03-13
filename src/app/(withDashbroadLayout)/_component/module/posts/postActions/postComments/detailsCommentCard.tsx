@@ -7,7 +7,7 @@ import {
   useReplayCommentsForPostsMutation,
 } from "@/src/redux/features/post/commentApi";
 import { TComment } from "@/src/types";
-import "react-comments-section/dist/index.css";
+import "react-comments-section/dist/index";
 import CommentInput from "./commentInput";
 import ReplyCommentInput from "./replyCommentInput";
 import { Avatar } from "@nextui-org/avatar";

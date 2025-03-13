@@ -28,6 +28,7 @@ export default function CreateReview() {
   const handleSubmit = async () => {
     if (!quote || rating === 0) {
       toast.error("Please provide a review and select a rating.");
+
       return;
     }
 

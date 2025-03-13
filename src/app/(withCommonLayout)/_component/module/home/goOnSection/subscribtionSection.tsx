@@ -26,6 +26,7 @@ const SubscriptionSection: FC = () => {
     // Simple email validation
     if (!email) {
       toast.error("Please enter your email address");
+
       return;
     }
 

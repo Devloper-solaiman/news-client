@@ -67,8 +67,10 @@ export function StoryModal({ story, onOpenChange, isOpen }: StoryModalProps) {
             setIsTransitioning(true);
             goToNextStory();
           }
+
           return 100;
         }
+
         return prevProgress + (100 / STORY_DURATION) * 100;
       });
     }, 100);
@@ -127,6 +129,7 @@ export function StoryModal({ story, onOpenChange, isOpen }: StoryModalProps) {
     };
 
     window.addEventListener('keydown', handleKeyDown);
+
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [goToPreviousStory, goToNextStory, onOpenChange]);
 
@@ -134,6 +137,7 @@ export function StoryModal({ story, onOpenChange, isOpen }: StoryModalProps) {
 
   const handleReaction = async (reaction: ReactionType) => {
     const currentStory = story.stories[currentStoryIndex];
+
     if (!currentStory || !currentStory.reactions) {
       return;
     }
@@ -151,6 +155,7 @@ export function StoryModal({ story, onOpenChange, isOpen }: StoryModalProps) {
   const handleDelete = async () => {
     try {
       const currentStoryId = story.stories[currentStoryIndex]._id;
+
       await deleteStoryFn(currentStoryId).unwrap();
       onDeleteModalClose();
       onOpenChange();
@@ -171,6 +176,7 @@ export function StoryModal({ story, onOpenChange, isOpen }: StoryModalProps) {
     if (diffInSeconds < 86400)
       return `${Math.floor(diffInSeconds / 3600)}h ago`; // less than 1 day
     if (diffInSeconds < 172800) return '1d ago'; // less than 2 days
+
     return `${Math.floor(diffInSeconds / 86400)}d ago`; // more than 2 days
   };
 
