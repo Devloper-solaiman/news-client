@@ -117,19 +117,19 @@ export default function MiniDashboard() {
             <p className="text-sm text-default-400">
               Most popular destination:
             </p>
-            {/* <h3 className="text-lg font-bold">{popularPots?.[0].title}</h3> */}
+            <h3 className="text-lg font-bold">{popularPots?.[0].title}</h3>
             <Link
               className="items-center justify-center"
               href={`/news-feed/posts/${popularPots?.[0]?._id}`}
             >
               {' '}
-              {/* <Image
+              <Image
                 className="rounded-md object-cover mt-3"
                 src={popularPots?.[0].images[0]}
                 height={500}
                 width={500}
                 alt="posts image"
-              /> */}
+              />
             </Link>
             <p className="text-sm text-default-400">
               Trending Tip: &quot;Top 5 Beaches to Visit&quot;
