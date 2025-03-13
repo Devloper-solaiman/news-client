@@ -77,6 +77,11 @@ const Documents: React.FC = () => {
       link: "https://travel.state.gov/",
       items: ["Travel Advisories", "Emergency Contacts", "Health Precautions"],
     },
+    {
+      title: "Local Guides",
+      link: "https://www.toursbylocals.com/",
+      items: ["City Tours", "Cultural Experiences", "Local Cuisine"],
+    },
   ];
 
   const filteredDocuments = documentItems.filter((doc) =>

@@ -16,9 +16,9 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: 'Md Rijwan Jannat',
+    name: 'Md Solaiman',
     role: 'Founder',
-    imageUrl: 'https://i.ibb.co.com/fVg8DVg/sketch1699926435270.png',
+    imageUrl: 'https://simgbb.com/avatar/KzqBN7sCL777.jpg',
     socialLinks: {
       facebook: '#',
       twitter: '#',
@@ -26,9 +26,9 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: 'Abu Talha',
+    name: 'Abdullah Al mahdi',
     role: 'Co-Founder',
-    imageUrl: 'https://i.ibb.co/kmqWZ9x/IMG-0044.jpg',
+    imageUrl: 'https://i.ibb.co/d4L5Dkc9/mahadi.jpg',
     socialLinks: {
       facebook: '#',
       twitter: '#',
@@ -36,9 +36,9 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: 'Debra Cavender',
+    name: 'Sabikun nahar (Happy)',
     role: 'Web Developer',
-    imageUrl: 'https://picsum.photos/200/200?random=3',
+    imageUrl: 'https://i.ibb.co/B2sNPrf8/nahar.jpg',
     socialLinks: {
       facebook: '#',
       twitter: '#',
@@ -46,9 +46,9 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: 'Vicky O. Harrell',
-    role: 'UI Designer',
-    imageUrl: 'https://picsum.photos/200/200?random=4',
+    name: 'Md. Bellal Hossin',
+    role: 'UX/UI Designer',
+    imageUrl: 'https://i.ibb.co/1fj6dz23/belal.jpg',
     socialLinks: {
       facebook: '#',
       twitter: '#',

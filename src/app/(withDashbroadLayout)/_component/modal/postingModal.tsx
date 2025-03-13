@@ -106,7 +106,7 @@ const PostModal = ({ userInfo }: TPostModalProps) => {
           formData.append("upload_preset", "travel-tips");
           formData.append(
             "cloud_name",
-            "Travel-tips&-destination-guides-images"
+            "dcbvputnw"
           );
 
           const cloudinaryUrl = process.env.NEXT_PUBLIC_CLOUDINARY_URL;

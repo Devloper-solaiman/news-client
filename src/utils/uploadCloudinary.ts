@@ -3,7 +3,7 @@ export async function uploadToCloudinary(file: File): Promise<string> {
 
   formData.append('file', file);
   formData.append('upload_preset', 'travel-tips');
-  formData.append('cloud_name', 'Travel-tips&-destination-guides-images');
+  formData.append('cloud_name', 'dcbvputnw');
 
   const cloudinaryUrl = process.env.NEXT_PUBLIC_CLOUDINARY_URL;
 
