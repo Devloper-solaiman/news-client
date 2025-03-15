@@ -110,7 +110,7 @@ export default function RegisterForm() {
                 href="/"
               >
                 <BrandLogo />
-                <p className="font-bold text-pink-600 text-xl">TT&DG</p>
+                <p className="font-bold text-pink-600 text-xl">Travel</p>
               </Link>
               {/* <div className="flex items-center justify-center flex-col md:flex-row gap-5">
                 <GoogleButton />

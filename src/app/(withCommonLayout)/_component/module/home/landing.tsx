@@ -79,7 +79,7 @@ const LandingBanner: FC<TLandingBannerProps> = () => {
                   />
                 ))}{" "}
           </div>
-          +<Code color="primary">TT&DG Community</Code>
+          +<Code color="primary">Travel Community</Code>
         </div>
       </div>
     </section>

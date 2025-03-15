@@ -17,7 +17,7 @@ export default function RegisterRightContent() {
         href="/"
       >
         <BrandLogo />
-        <p className="font-bold text-pink-600 text-xl">TT&DG</p>
+        <p className="font-bold text-pink-600 text-xl">Travel</p>
       </Link>
       {/* Foreground Content */}
       <div className="relative text-center z-10">

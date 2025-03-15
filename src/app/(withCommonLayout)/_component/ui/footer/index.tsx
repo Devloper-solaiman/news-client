@@ -34,7 +34,7 @@ const Footer = () => {
           >
             <Link className="flex items-center gap-2" href="/">
               <BrandLogo />
-              <p className="font-bold text-pink-600 text-xl">TT&DG</p>
+              <p className="font-bold text-pink-600 text-xl">Travel</p>
             </Link>
             <p className="mt-4 text-sm">
               Exploring the World, one adventure at a time. Connecting travelers
@@ -123,10 +123,10 @@ const Footer = () => {
               <p className="flex items-center gap-1">
                 <p>Email:</p>{" "}
                 <a
-                  href="mailto:info@fitnessgear.com"
+                  href="mailto:info@travel.com"
                   className="text-pink-500 hover:text-pink-600"
                 >
-                  info@fitnessgear.com
+                  info@travel.com
                 </a>
               </p>
               <p className="flex items-center gap-1">
@@ -139,7 +139,7 @@ const Footer = () => {
                 </a>
               </p>
               <p className="flex items-center gap-1">
-                Address: 123 Fitness Lane, Wellness City, Fitland 45678
+                Address: 1202 Khilgon Lane, Green City, Dhaka 8200
               </p>
             </div>
           </motion.div>
@@ -151,7 +151,7 @@ const Footer = () => {
         <div className="flex justify-center items-center">
           {/* Footer Copyright */}
           <p className="text-sm text-default-500 text-center">
-            © {date} TT&DG. All rights reserved.
+            © {date} Travel. All rights reserved.
           </p>
         </div>
       </Container>
