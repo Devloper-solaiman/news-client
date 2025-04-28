@@ -45,16 +45,7 @@ The platform offers multiple ways for users to interact with content, including 
 4. **Create a `.env.local` file in the root directory and add your environment variables**:
 
    ```bash
-   NEXT_PUBLIC_WORKSPACE=development
-   NEXT_PUBLIC_BASE_API=https://news-server-fawn.vercel.app/api/v1
-   NEXT_PUBLIC_LIVE_API=https://news-server-fawn.vercel.app/api/v1
-   NEXT_PRIVATE_TURBOPACK=false
-   NEXT_PUBLIC_JWT_ACCESS_TOKEN=your_jwt_access_token_here
-   NEXT_PUBLIC_CLOUDINARY_URL=https://YOUR_CLOUDINARY_URL
-   GOOGLE_CLIENT_ID= client_Id
-   GOOGLE_CLIENT_SECRET=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
-   NEXTAUTH_SECRET=mS8AJD9C1jaYCvLYebV1OuZr66ggv1fLUj8+o1nTiyw=
-   NEXTAUTH_URL=http://localhost:3000
+   NEXT_PUBLIC_WORKSPACE
    ```
 ## Table of Contents
 
